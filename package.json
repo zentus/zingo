@@ -1,6 +1,6 @@
 {
   "name": "zingo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A tool for creating command line interfaces",
   "main": "lib/index.js",
   "scripts": {
@@ -8,10 +8,10 @@
   },
   "author": "zentus",
   "license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/zentus/zingo.git"
-	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zentus/zingo.git"
+  },
   "dependencies": {
     "@sindresorhus/is": "^2.0.0",
     "chalk": "^3.0.0",
