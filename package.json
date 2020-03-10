@@ -1,6 +1,6 @@
 {
   "name": "zingo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tool for creating command line interfaces",
   "main": "lib/index.js",
   "scripts": {
