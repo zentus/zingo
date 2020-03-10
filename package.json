@@ -19,6 +19,7 @@
     "deep-merge": "^1.0.0",
     "deepmerge": "^4.2.2",
     "dot-prop-immutable": "^2.1.0",
+    "maybe-include": "0.0.3",
     "table": "^5.4.6"
   }
 }

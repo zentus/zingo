@@ -6,6 +6,38 @@ const sentenceCase = string => !string ? '' : string[0].toUpperCase() + string.s
 
 const cli = new Zingo({
 	package: pkg,
+	commands: {
+		config: {
+			description: 'Set or get a config property',
+			arguments: [{
+				name: 'action',
+				description: 'A config action (get|set)',
+				type: 'subcommand',
+				options: {
+					set: {
+						description: 'Set a config property'
+					},
+					get: {
+						description: 'Get a config property'
+					}
+				}
+			}, {
+				name: 'property',
+				type: 'value',
+				description: 'A config property, for example "username"',
+				validate: arg => arg.length > 0 && typeof arg === 'string'
+			}, {
+				name: 'value',
+				type: 'value',
+				description: 'The value to set for the specified config property',
+				allowedWithSubcommands: [{
+					name: 'action',
+					options: ['set']
+				}],
+				validate: arg => arg.length > 0 && typeof arg === 'string'
+			}]
+		}
+	},
 	options: [{
 		option: 'say-hello',
 		shorthand: 'sh',
